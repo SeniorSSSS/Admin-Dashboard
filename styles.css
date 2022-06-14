@@ -22,3 +22,149 @@ html {
     max-width: 100%;
     height: auto;
   }
+/* dashboard is 3.2
+    other is 12 */
+
+body {
+    display: grid;
+    grid-template-columns: 3.2fr 12fr;
+    grid-template-rows: 1fr 5.75fr;
+}
+  /* Dashboard CSS */
+
+.dashboard {
+    grid-column: 1;
+    grid-row: 1/3;
+    background-color: aquamarine;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: 0.1fr 0.4fr 0.5fr;
+    
+    
+}
+.dashboard__logoimage {
+    grid-column: 1;
+    grid-row: 1;
+}
+.dashboard__logotext {
+    grid-column: 2;
+    grid-row: 1;
+}
+.dashboard__uppernavimage {
+    grid-column: 1;
+    grid-row: 2;
+}
+.dashboard__uppernavimagecontainer {
+    display: flex;
+    flex-direction: column;
+}
+.dashboard__uppernavtext {
+    grid-column: 2;
+    grid-row: 2;
+}
+.dashboard__lowernavimage {
+    grid-column: 1;
+    grid-row: 3;
+}
+.dashboard__lowernavtext {
+    grid-column: 2;
+    grid-row: 3;
+
+}
+
+
+
+
+
+
+  /* Upper Searchbar/button area css */
+.upperarea {
+    grid-column: 2;
+    grid-row: 1/2;
+    background-color: orange;
+    border: 1px solid purple;
+    display: grid;
+    grid-template-columns: 2fr 1fr;
+    grid-template-rows: 1fr 1fr;
+}
+
+
+
+
+  /* Main area css */
+.main {
+    grid-column: 2;
+    grid-row: 2/3;
+    background-color: wheat;
+    display: grid;
+    grid-template-columns: 2.5fr 1fr;
+    grid-template-rows: 0.1fr 1fr 0.1fr;
+    gap: 20px;
+    
+}
+
+.main__YourProjects {
+    grid-column: 1;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: 1fr 1fr 1fr;
+    /* background-color: darkolivegreen; */
+    gap: 20px;
+    margin-left: 1rem;
+    font-size: 1.4rem;
+}
+.main__YourProjects > section {
+    background-color: cornflowerblue;
+    border-left: 1rem solid plum;
+    height: fit-content;
+}
+.main__YourProjects__buttons {
+    float: right;
+}
+
+
+.main__YourProjectRightSideGrid {
+   display: grid;
+   
+   grid-template-rows: 1fr 1fr;
+    border: 1px solid yellow;
+}
+/* --------- */
+.main__Announcements {
+    
+    background-color: cornflowerblue;
+    height: fit-content;
+    padding: 1rem;
+}
+
+.main__AnnouncementsCommunityArea {
+    border-top: 0.2rem solid orange;
+    border-bottom: 0.2rem solid orange;
+    
+}
+
+/* ----------- */
+.main__Trending {
+    
+    background-color: rgb(0, 130, 139);
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-template-rows: 0.1fr 0.9fr; 
+}
+
+.main__Trending h2 {
+    background-color: wheat;
+}
+.main__Trending div {
+   padding-left: 1rem;
+}
+
+.main__Trending img {
+    height: 2em;
+    border-radius: 50%;
+    
+}
+
+.main__Trending p {
+    
+}

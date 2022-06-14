@@ -11,23 +11,29 @@
 </head>
 
 <body>
-    <!-- This area will have 4 parts made in grid -->
-    <section>
+    <!-- This area will have 3 parts made in grid -->
+
+    <!-- The 1st section here is for the upper search/button board thing -->
+    <section class="upperarea">
+
         <section>
-            <img>
+            <button>🔍</button>
+            <form action="#">
+                <label for="search"></label>
+                <input type="text" name="searchvalue" id="search">
+            </form>
+        </section>
+
+        <section>
+            <img src="Images/bell-ringing-bold-svgrepo-com (1).svg" alt="bellringing">
+            <img src="Images/b2b00728b5d91753dfe94e77fca10088--manga-draing-note.jpg" alt="face">
+            <span>Morgan Oakley</span>
+        </section>
+
+        <section>
+            <img src="Images/b2b00728b5d9753dfe94e77fca10088--manga-drawing-note.jpg" alt="face">
             <span>Hi there,</span>
             <h1>Morgan Oakyley (@morgan)</h1>
-        </section>
-
-        <section>
-            <button></button>
-            <form action="#"></form>
-        </section>
-
-        <section>
-            <img>
-            <img>
-            <span>Stormy storm</span>
         </section>
 
         <section>
@@ -37,26 +43,62 @@
         </section>
     </section>
 
+
     <!-- This area is for the dashboard on the left that contains the blue links -->
-    <section>
-        <img>
-        <nav></nav>
+    <section class="dashboard">
+        <img src="Images/diamond-svgrepo-com (1).svg" alt="diamond" class="dashboard__logoimage">
+        <p class="dashboard__logotext">Dashboard</p>
+
+        <div class="dashboard__uppernavimage">
+            <img src="Images/house-svgrepo-com.svg" alt="house">
+            <img src="Images/profile-svgrepo-com.svg" alt="profile">
+            <img src="Images/message-svgrepo-com.svg" alt="messages">
+            <img src="Images/clock-svgrepo-com.svg" alt="history">
+            <img src="Images/tasks-svgrepo-com.svg" alt="task">
+            <img src="Images/people-svgrepo-com (1).svg" alt="communities">
+        </div>
+        <div class="dashboard__lowernavimage">
+            <img src="Images/gear-svgrepo-com.svg" alt="settings">
+
+            <img src="Images/support-svgrepo-com.svg" alt="support">
+
+            <img src="Images/antivirus-cyberspace-firewall-information-password-privacy-shield-svgrepo-com.svg"
+                alt="privacy">
+        </div>
+        <nav aria-label="primary">
+            <ol class="dashboard__uppernavtext">
+                <li>Home</li>
+                <li>Profile</li>
+                <li>Messages</li>
+                <li>History</li>
+                <li>Tasks</li>
+                <li>Communities</li>
+            </ol>
+        </nav>
+        <nav aria-label="secondary">
+            <ol class="dashboard__lowernavtext">
+                <li>Settings</li>
+                <li>Support</li>
+                <li>Privacy</li>
+            </ol>
+        </nav>
     </section>
 
-
     <!-- This is for the main part which contains the project, Announcements & trending stuff -->
-
-    <main>
-        <section>
-            <h2>Your Projects</h2>
+    <main class="main">
+        <h2>Your Projects</h2>
+        <h2>Announcements</h2>
+        <section class="main__YourProjects">
             <section>
                 <h3>Super Cool Projects</h3>
                 <p>Sed tempus ut lacus ut scelerisque. Suspendissee sollicitudin nibh erat, id facilicsis accumsan nec
                 </p>
-                <div>
-                    <img>
-                    <img>
-                    <img>
+                <div class="main__YourProjects__buttons">
+                    <img src="Images/save-svgrepo-com.svg" alt="">
+
+                    <img src="Images/folder-silhouette-variant-with-add-sign-svgrepo-com.svg" alt="">
+
+                    <img src="Images/chicken-svgrepo-com.svg" alt="">
                 </div>
             </section>
 
@@ -64,10 +106,12 @@
                 <h3>Less Cool Projects</h3>
                 <p>Sed tempus ut lacus ut scelerisque. Suspendissee sollicitudin nibh erat, id facilicsis accumsan nec
                 </p>
-                <div>
-                    <img>
-                    <img>
-                    <img>
+                <div class="main__YourProjects__buttons">
+                    <img src="Images/save-svgrepo-com.svg" alt="">
+
+                    <img src="Images/folder-silhouette-variant-with-add-sign-svgrepo-com.svg" alt="">
+
+                    <img src="Images/chicken-svgrepo-com.svg" alt="">
                 </div>
             </section>
 
@@ -75,10 +119,12 @@
                 <h3>Impossible App</h3>
                 <p>Sed tempus ut lacus ut scelerisque. Suspendissee sollicitudin nibh erat, id facilicsis accumsan nec
                 </p>
-                <div>
-                    <img>
-                    <img>
-                    <img>
+                <div class="main__YourProjects__buttons">
+                    <img src="Images/save-svgrepo-com.svg" alt="">
+
+                    <img src="Images/folder-silhouette-variant-with-add-sign-svgrepo-com.svg" alt="">
+
+                    <img src="Images/chicken-svgrepo-com.svg" alt="">
                 </div>
             </section>
 
@@ -86,10 +132,12 @@
                 <h3>Easy Peasy App</h3>
                 <p>Sed tempus ut lacus ut scelerisque. Suspendissee sollicitudin nibh erat, id facilicsis accumsan nec
                 </p>
-                <div>
-                    <img>
-                    <img>
-                    <img>
+                <div class="main__YourProjects__buttons">
+                    <img src="Images/save-svgrepo-com.svg" alt="">
+
+                    <img src="Images/folder-silhouette-variant-with-add-sign-svgrepo-com.svg" alt="">
+
+                    <img src="Images/chicken-svgrepo-com.svg" alt="">
                 </div>
             </section>
 
@@ -97,10 +145,12 @@
                 <h3>Ad blocker</h3>
                 <p>Sed tempus ut lacus ut scelerisque. Suspendissee sollicitudin nibh erat, id facilicsis accumsan
                     nec</p>
-                <div>
-                    <img>
-                    <img>
-                    <img>
+                <div class="main__YourProjects__buttons">
+                    <img src="Images/save-svgrepo-com.svg" alt="">
+
+                    <img src="Images/folder-silhouette-variant-with-add-sign-svgrepo-com.svg" alt="">
+
+                    <img src="Images/chicken-svgrepo-com.svg" alt="">
                 </div>
             </section>
 
@@ -108,61 +158,65 @@
                 <h3>Money Maker</h3>
                 <p>Sed tempus ut lacus ut scelerisque. Suspendissee sollicitudin nibh erat, id facilicsis accumsan
                     nec</p>
-                <div>
-                    <img>
-                    <img>
-                    <img>
+                <div class="main__YourProjects__buttons">
+                    <img src="Images/save-svgrepo-com.svg" alt="">
+
+                    <img src="Images/folder-silhouette-variant-with-add-sign-svgrepo-com.svg" alt="">
+
+                    <img src="Images/chicken-svgrepo-com.svg" alt="">
                 </div>
             </section>
         </section>
 
-        <section>
-            <h2>Announcements</h2>
-            <section>
+        <section class="main__YourProjectRightSideGrid">
+            <section class="main__Announcements">
                 <section>
-                    <h3>Site Maintenance</h3>
-                    <p>wqeoiuweq ewqoiuw ewquoiewqiu weqoiuwq uwqeuoiweq wqoiwqo owqi qwoi</p>
-                </section>
+                    <section>
+                        <h3>Site Maintenance</h3>
+                        <p>wqeoiuweq ewqoiuw ewquoiewqiu weqoiuwq uwqeuoiweq wqoiwqo owqi qwoi</p>
+                    </section>
 
-                <section>
-                    <h3>Community Share Day</h3>
-                    <p>uuu uuu uuuuuiuu uuuiu uiuu uiui uiuiu iuiui uiuiu iuiu</p>
-                </section>
+                    <section class="main__AnnouncementsCommunityArea">
+                        <h3>Community Share Day</h3>
+                        <p>uuu uuu uuuuuiuu uuuiu uiuu uiui uiuiu iuiui uiuiu iuiu</p>
+                    </section>
 
-                <section>
-                    <h3>Updated Privacy Policy</h3>
-                    <p>uuu uuu uuuuuiuu uuuiu uiuu uiui uiuiu iuiui uiuiu iuiu</p>
+                    <section>
+                        <h3>Updated Privacy Policy</h3>
+                        <p>uuu uuu uuuuuiuu uuuiu uiuu uiui uiuiu iuiui uiuiu iuiu</p>
+                    </section>
                 </section>
             </section>
-        </section>
 
-        <section>
-            <h2>Trending</h2>
-            <div>
+            
+            <section class="main__Trending">
+                <h2>Trending</h2>
                 <div>
-                    <img>
-                    <p>@tegan</p>
-                    <p>World Peace Builder</p>
-                </div>
-
-                <div>
-                        <img>
+                    <div>
+                        <img src="Images/download.jpeg">
                         <p>@tegan</p>
                         <p>World Peace Builder</p>
-                </div>
+                    </div>
 
-                <div>
-                        <img>
+                    <div>
+                        <img src="Images/whale.jpeg">
                         <p>@tegan</p>
                         <p>World Peace Builder</p>
-                </div>
+                    </div>
 
-                <div>
-                        <img>
+                    <div>
+                        <img src="Images/b829edd68c818352a26f754a8184e636_bak---02---libby_s-famous-pumpkin-pie-617_edit.jpg">
                         <p>@tegan</p>
                         <p>World Peace Builder</p>
+                    </div>
+
+                    <div>
+                        <img src="Images/b2b00728b5d91753dfe94e77fca10088--manga-drawing-note.jpg">
+                        <p>@tegan</p>
+                        <p>World Peace Builder</p>
+                    </div>
                 </div>
-            </div>
+            </section>
         </section>
     </main>
 
