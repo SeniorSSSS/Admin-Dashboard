@@ -16,27 +16,29 @@
     <!-- The 1st section here is for the upper search/button board thing -->
     <section class="upperarea">
 
-        <section>
+        <section class="upperarea__topleft">
             <button>🔍</button>
             <form action="#">
                 <label for="search"></label>
-                <input type="text" name="searchvalue" id="search">
+                <input type="text" name="searchvalue" id="search" size="60">
             </form>
         </section>
 
-        <section>
+        <section class="upperarea__topright">
             <img src="Images/bell-ringing-bold-svgrepo-com (1).svg" alt="bellringing">
-            <img src="Images/b2b00728b5d91753dfe94e77fca10088--manga-draing-note.jpg" alt="face">
+            <img src="Images/b2b00728b5d91753dfe94e77fca10088--manga-drawing-note.jpg" alt="face">
             <span>Morgan Oakley</span>
         </section>
 
-        <section>
-            <img src="Images/b2b00728b5d9753dfe94e77fca10088--manga-drawing-note.jpg" alt="face">
-            <span>Hi there,</span>
-            <h1>Morgan Oakyley (@morgan)</h1>
+        <section class="upperarea__bottomleft">
+            <img src="Images/b2b00728b5d91753dfe94e77fca10088--manga-drawing-note.jpg" alt="face">
+            <div>
+                <span>Hi there,</span>
+                <h1>Morgan Oakyley (@morgan)</h1>
+            </div>
         </section>
 
-        <section>
+        <section class="upperarea__bottomright">
             <button>New</button>
             <button>Upload</button>
             <button>Share</button>
@@ -46,41 +48,51 @@
 
     <!-- This area is for the dashboard on the left that contains the blue links -->
     <section class="dashboard">
-        <img src="Images/diamond-svgrepo-com (1).svg" alt="diamond" class="dashboard__logoimage">
-        <p class="dashboard__logotext">Dashboard</p>
-
-        <div class="dashboard__uppernavimage">
-            <img src="Images/house-svgrepo-com.svg" alt="house">
-            <img src="Images/profile-svgrepo-com.svg" alt="profile">
-            <img src="Images/message-svgrepo-com.svg" alt="messages">
-            <img src="Images/clock-svgrepo-com.svg" alt="history">
-            <img src="Images/tasks-svgrepo-com.svg" alt="task">
-            <img src="Images/people-svgrepo-com (1).svg" alt="communities">
+        <div class="dashboard__logoimageandtext">
+            <img src="Images/diamond-svgrepo-com (1).svg" alt="diamond">
+            <p>Dashboard</p>
         </div>
-        <div class="dashboard__lowernavimage">
-            <img src="Images/gear-svgrepo-com.svg" alt="settings">
 
-            <img src="Images/support-svgrepo-com.svg" alt="support">
-
-            <img src="Images/antivirus-cyberspace-firewall-information-password-privacy-shield-svgrepo-com.svg"
-                alt="privacy">
-        </div>
-        <nav aria-label="primary">
-            <ol class="dashboard__uppernavtext">
-                <li>Home</li>
-                <li>Profile</li>
-                <li>Messages</li>
-                <li>History</li>
-                <li>Tasks</li>
-                <li>Communities</li>
-            </ol>
+        <nav aria-label="primary" class="dashboard__uppernavtextandimage">
+            <div class="flexcontainer">
+                <img src="Images/house-svgrepo-com.svg" alt="house">
+                <a href="#">Home</a>
+            </div>
+            <div class="flexcontainer">
+                <img src="Images/profile-svgrepo-com.svg" alt="profile">
+                <a href="#">Profile</a>
+            </div>
+            <div class="flexcontainer">
+                <img src="Images/message-svgrepo-com.svg" alt="messages">
+                <a href="#">Messages</a>
+            </div>
+            <div class="flexcontainer">
+                <img src="Images/clock-svgrepo-com.svg" alt="history">
+                <a href="#">History</a>
+            </div>
+            <div class="flexcontainer">
+                <img src="Images/tasks-svgrepo-com.svg" alt="task">
+                <a href="#">Tasks</a>
+            </div>
+            <div class="flexcontainer">
+                <img src="Images/people-svgrepo-com (1).svg" alt="communities">
+                <a href="#">Communities</a>
+            </div>
         </nav>
-        <nav aria-label="secondary">
-            <ol class="dashboard__lowernavtext">
-                <li>Settings</li>
-                <li>Support</li>
-                <li>Privacy</li>
-            </ol>
+        <nav aria-label="secondary" class="dashboard__lowernavtextandimage">
+            <div class="flexcontainer">
+                <img src="Images/gear-svgrepo-com.svg" alt="settings">
+                <a href="#">Settings</a>
+            </div>
+            <div class="flexcontainer">
+                <img src="Images/support-svgrepo-com.svg" alt="support">
+                <a href="#">Support</a>
+            </div>
+            <div class="flexcontainer">
+                <img src="Images/antivirus-cyberspace-firewall-information-password-privacy-shield-svgrepo-com.svg"
+                    alt="privacy">
+                <a href="#">Privacy</a>
+            </div>
         </nav>
     </section>
 
@@ -188,38 +200,45 @@
                 </section>
             </section>
 
-            
+
             <section class="main__Trending">
                 <h2>Trending</h2>
                 <div>
-                    <div>
+                    <div class="TrendingFlexcontainer">
                         <img src="Images/download.jpeg">
-                        <p>@tegan</p>
-                        <p>World Peace Builder</p>
+                        <div class="flexinflex">
+                            <p>@tegan</p>
+                            <p>World Peace Builder</p>
+                        </div>
                     </div>
 
-                    <div>
+                    <div class="TrendingFlexcontainer">
                         <img src="Images/whale.jpeg">
-                        <p>@tegan</p>
-                        <p>World Peace Builder</p>
+                        <div class="flexinflex">
+                            <p>@tegan</p>
+                            <p>World Peace Builder</p>
+                        </div>
                     </div>
 
-                    <div>
-                        <img src="Images/b829edd68c818352a26f754a8184e636_bak---02---libby_s-famous-pumpkin-pie-617_edit.jpg">
-                        <p>@tegan</p>
-                        <p>World Peace Builder</p>
+                    <div class="TrendingFlexcontainer">
+                        <img
+                            src="Images/b829edd68c818352a26f754a8184e636_bak---02---libby_s-famous-pumpkin-pie-617_edit.jpg">
+                        <div class="flexinflex">
+                            <p>@tegan</p>
+                            <p>World Peace Builder</p>
+                        </div>
                     </div>
 
-                    <div>
+                    <div class="TrendingFlexcontainer">
                         <img src="Images/b2b00728b5d91753dfe94e77fca10088--manga-drawing-note.jpg">
-                        <p>@tegan</p>
-                        <p>World Peace Builder</p>
+                        <div class="flexinflex">
+                            <p>@tegan</p>
+                            <p>World Peace Builder</p>
+                        </div>
                     </div>
                 </div>
             </section>
         </section>
     </main>
-
 </body>
-
 </html>
